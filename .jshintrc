@@ -1,0 +1,26 @@
+{
+  "undef": true,
+  "unused": true,
+  "camelcase": true,
+  "curly": true,
+  "quotmark": true,
+  "globals": {
+    // jQuery
+    "$": false, 
+    "jQuery": false,
+    // Underscore
+    "_": false,
+    // Normal stuff
+    "window": false,
+    "console": false,
+    // Meteor objects
+    "Meteor": false,
+    "Template": false,
+    "Deps": false,
+    "Router": false,
+    "Items": false,
+    // Meteor modules and helpers
+    "dimsum": false
+  }
+}
+
