@@ -7,3 +7,4 @@
 meteor-platform
 autopublish
 iron:router
+peerlibrary:dimsum
