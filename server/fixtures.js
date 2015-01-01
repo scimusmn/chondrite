@@ -9,7 +9,7 @@ dimsum.configure({ flavor: 'jabberwocky' });
 
 if (Items.find().count() === 0) {
 
-    var entries = 10;
+    var entries = 5000;
     var i = 0;
     while (i < entries) {
         i += 1;
