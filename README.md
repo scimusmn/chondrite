@@ -12,7 +12,7 @@ We use Meteor for some specific purposes that might not be applicable to everyon
 * I don't feel like it's neccesary to indicate the server/client/both breakdown in the folder structure. There's obviously still a server and client folder, but things like the router, don't need an extra folder to indicate that they execute in both.
 
 # TODO
-- [ ] Implement spinner for page loading
+- [x] Implement spinner for page loading
 - [ ] Implement Bootstrap
 - [ ] Create a homepage route
 

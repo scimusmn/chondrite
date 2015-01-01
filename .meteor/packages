@@ -8,3 +8,4 @@ meteor-platform
 iron:router
 peerlibrary:dimsum
 less
+sacha:spin
