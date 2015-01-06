@@ -9,3 +9,4 @@ iron:router
 peerlibrary:dimsum
 less
 sacha:spin
+nemo64:bootstrap
