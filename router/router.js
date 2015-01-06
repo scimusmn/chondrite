@@ -62,6 +62,23 @@ Router.configure({
 Router.map(function() {
 
     /**
+     * Homepage
+     *
+     * This is identical to the all items page
+     */
+    this.route('homepage', {
+        path: '/',
+        waitOn: function () {
+            return Meteor.subscribe('allItems');
+        },
+        data: function () {
+            return {
+                items: Items.find()
+            };
+        }
+    });
+
+    /**
      * All items
      */
     this.route('items', {
