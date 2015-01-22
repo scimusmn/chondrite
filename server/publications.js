@@ -28,8 +28,8 @@ Meteor.publish('allItems', function() {
  *
  * TODO: document the argument
  */
-Meteor.publish('singleItem', function(link) {
-    var result = Items.find( { 'link': link });
+Meteor.publish('singleItem', function(_id) {
+    var result = Items.find( { '_id': _id });
     return result;
 });
 
