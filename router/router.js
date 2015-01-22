@@ -101,15 +101,13 @@ Router.map(function() {
     this.route('item', {
         path: '/items/:link',
         waitOn: function () {
-            console.log('link orig -', this.params.link);
-            var link = this.params.link;
-            link = link.toString();
-            console.log('link string -', link);
             return Meteor.subscribe('singleItem', this.params.link);
+            //return Meteor.subscribe('singleItem', this.params.link);
         },
         data: function () {
             return {
-                item: Items.findOne(this.params.link)
+                item: Items.findOne({link: this.params.link})
+                //item: Items.findOne(this.params.link)
             };
         }
     });
