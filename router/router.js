@@ -102,12 +102,10 @@ Router.map(function() {
         path: '/items/:link',
         waitOn: function () {
             return Meteor.subscribe('singleItem', this.params.link);
-            //return Meteor.subscribe('singleItem', this.params.link);
         },
         data: function () {
             return {
                 item: Items.findOne({link: this.params.link})
-                //item: Items.findOne(this.params.link)
             };
         }
     });

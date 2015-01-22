@@ -29,9 +29,7 @@ Meteor.publish('allItems', function() {
  * TODO: document the argument
  */
 Meteor.publish('singleItem', function(link) {
-    console.log('link -', link);
     var result = Items.find( { link: link } );
-    console.log('result - ', result.fetch());
     return result;
 });
 
