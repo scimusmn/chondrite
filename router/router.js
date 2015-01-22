@@ -99,13 +99,17 @@ Router.map(function() {
      * each of these waitOn, data distinctions.
      */
     this.route('item', {
-        path: '/items/:_id',
+        path: '/items/:link',
         waitOn: function () {
-            return Meteor.subscribe('singleItem', this.params._id);
+            console.log('link orig -', this.params.link);
+            var link = this.params.link;
+            link = link.toString();
+            console.log('link string -', link);
+            return Meteor.subscribe('singleItem', this.params.link);
         },
         data: function () {
             return {
-                item: Items.findOne(this.params._id)
+                item: Items.findOne(this.params.link)
             };
         }
     });
