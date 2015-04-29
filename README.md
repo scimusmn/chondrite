@@ -28,6 +28,7 @@ this boilerplate.
 - [x] Implement spinner for page loading
 - [ ] Implement Bootstrap...less?
 - [ ] Create a homepage route
+- [ ] Add some basic tests using Velocity and ...?
 
 ## Credit
 Many of the ideas for this structure are cribbed from these other great boilerplates and guides:
