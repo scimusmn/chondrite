@@ -12,14 +12,21 @@ This isn't ready for primetime yet.
 * Edit settings/settings.json adding your details. This file is ignored
 
 ## Biases
-We use Meteor for some specific purposes that might not be applicable to everyone. Here are some of the entirely self-centered biases that you'll see in this boilerplate.
+We use Meteor for some specific purposes that might not be applicable to
+everyone. Here are some of the entirely self-centered biases that you'll see in
+this boilerplate.
 
-* I generally like flat document structures. We don't work on huge applications, so I'd rather have things one or two levels in vs. seven.
-* I don't feel like it's neccesary to indicate the server/client/both breakdown in the folder structure. There's obviously still a server and client folder, but things like the router, don't need an extra folder to indicate that they execute in both.
+* I generally like flat document structures. We don't work on huge
+  applications, so I'd rather have things one or two levels in vs. seven.
+* I don't feel like it's neccesary to indicate the server/client/both breakdown
+  in the folder structure. There's obviously still a server and client folder,
+  but things like the router, don't need an extra folder to indicate that they
+  execute in both.
+* We generally use Meteor to make kiosk applications that run locally.
 
 # TODO
 - [x] Implement spinner for page loading
-- [ ] Implement Bootstrap
+- [ ] Implement Bootstrap...less?
 - [ ] Create a homepage route
 
 ## Credit
