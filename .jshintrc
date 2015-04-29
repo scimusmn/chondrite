@@ -21,9 +21,9 @@
     "Template": false,
     "Deps": false,
     "Router": false,
-    "Items": false,
-    // Meteor modules and helpers
+    "Images": false,
+    "Components": false,
+    "Pages": false,
     "dimsum": false
   }
 }
-
