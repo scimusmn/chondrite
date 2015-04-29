@@ -5,6 +5,12 @@ A Meteor JS project boilerplate/skeleton.
 ## Work in progress
 This isn't ready for primetime yet.
 
+## Install
+* [Download the files](https://github.com/scimusmn/chondrite/archive/master.zip)
+* Copy to your desired location
+* `cp settings/settings.default.json settings/settings.json`
+* Edit settings/settings.json adding your details. This file is ignored
+
 ## Biases
 We use Meteor for some specific purposes that might not be applicable to everyone. Here are some of the entirely self-centered biases that you'll see in this boilerplate.
 
