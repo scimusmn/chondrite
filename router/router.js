@@ -85,10 +85,12 @@ Router.map(function() {
         waitOn: function () {
             return Meteor.subscribe('allItems');
         },
-        data: function () {
-            return {
-                items: Items.find()
-            };
+
+        data: {
+            items: function () {
+                var items = Items.find();
+                return items;
+            }
         }
     });
 
@@ -103,10 +105,11 @@ Router.map(function() {
         waitOn: function () {
             return Meteor.subscribe('singleItem', this.params.link);
         },
-        data: function () {
-            return {
-                item: Items.findOne({link: this.params.link})
-            };
+        data: {
+            item: function () {
+                var item = Items.findOne({link: this.params.link});
+                return item;
+            }
         }
     });
 
